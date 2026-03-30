@@ -9,11 +9,11 @@
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git clone https://github.com/yandex-praktikum/api_final_yatube
+git clone https://github.com/Stepan22042004/etl.git
 ```
 
 ```
-cd api_final_yatube
+cd etl
 ```
 
 Cоздать и активировать виртуальное окружение:
