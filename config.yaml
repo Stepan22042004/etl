@@ -1,0 +1,28 @@
+# conf/config.yaml
+db:
+  name: ${oc.env:HH_DB_NAME, etl}
+  user: ${oc.env:HH_DB_USER, etl}
+  password: ${oc.env:HH_DB_PASSWORD, etl}
+  host: ${oc.env:HH_DB_HOST, localhost}
+  port: ${oc.env:HH_DB_PORT, 5432}
+
+api:
+  hh_url: "https://api.hh.ru/"
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  per_page: 100
+  retry_attempts: 3
+
+parser:
+  company_id: 4181
+  company_name: null
+  date_from: null
+  days_back: 7
+  db_enabled: True
+  output_file: vacancies.csv
+  no_csv: false
+
+
+
+csv_log:
+  log_file: parsing_log.csv
+  no_log: false
