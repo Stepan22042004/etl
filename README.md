@@ -43,6 +43,7 @@ pip install -r requirements.txt
 ```
 python test3.py
 ```
+Если хотим по расписанию парсить, пользуемся crontab как на занятии...
 
 
 ### Конфиг
