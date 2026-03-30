@@ -47,7 +47,6 @@ python test3.py
 
 
 ### Конфиг
-Регистрация нового пользователя
 ```
 # conf/config.yaml
 db:
