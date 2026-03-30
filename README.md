@@ -59,21 +59,21 @@ api:
   hh_url: "https://api.hh.ru/"
   user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
   per_page: 100
-  retry_attempts: 3
+  retry_attempts: 3 (кол-во попыток)
 
 parser:
   company_id: 4181
   company_name: null
-  date_from: null
-  days_back: 7
-  db_enabled: True
+  date_from: null (с какой даты)
+  days_back: 7 - за какое кол-во дней с момента запуска парсинга(null парсит все вакансии с сайта)
+  db_enabled: True - выгрузка в бд
   output_file: vacancies.csv
-  no_csv: false
+  no_csv: false - выгрузка в csv
 
 
 
 csv_log:
-  log_file: parsing_log.csv
+  log_file: parsing_log.csv 
   no_log: false
 ```
 
